@@ -1,0 +1,4 @@
+Hello, I am tierd.
+Yeah that was important to say that the program for floating-point is not correct . I meant both programs. The results are not equals and there are a lot of differentces between the array elements. It depends on the initialization amount. I have recorded that a result might be 50 biger than the corresponding result which must be equal!
+
+DO DO NOT USE THE FLOAT PROGRAMS SUCH AS AIC1F.c and AIC3F.c

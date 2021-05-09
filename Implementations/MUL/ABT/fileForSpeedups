@@ -1,0 +1,288 @@
+spliter
+Time: Tue 14 May 2019 01:44:34 PM +0430
+icc
+-D _GNU_SOURCE -O3 -xHOST
+-no-vec
+MUL1, 16x16, 3412
+MUL1, 16x16, 1360
+MUL3, 16x16, 1970
+floating points:
+MUL1F, 16x16, 3410
+MUL1F, 16x16, 1022
+MUL3F, 16x16, 1898
+spliter
+Time: Tue 14 May 2019 01:45:30 PM +0430
+gcc
+-D _GNU_SOURCE -O3 -march=native
+-fno-tree-vectorize -fno-tree-slp-vectorize
+MUL1, 16x16, 3252
+MUL1, 16x16, 1036
+MUL3, 16x16, 2132
+floating points:
+MUL1F, 16x16, 2556
+MUL1F, 16x16, 1308
+MUL3F, 16x16, 1470
+spliter
+Time: Tue 14 May 2019 01:46:20 PM +0430
+clang
+-D _GNU_SOURCE -O3 -march=native
+-fno-vectorize -fno-slp-vectorize
+MUL1, 16x16, 3238
+MUL1, 16x16, 3926
+MUL3, 16x16, 2388
+floating points:
+MUL1F, 16x16, 3586
+MUL1F, 16x16, 3906
+MUL3F, 16x16, 1630
+spliter
+Time: Tue 14 May 2019 01:54:30 PM +0430
+icc
+-D _GNU_SOURCE -O3 -xHOST
+-no-vec
+MUL1, 32x32, 26736
+MUL1, 32x32, 7016
+MUL3, 32x32, 9238
+floating points:
+MUL1F, 32x32, 26872
+MUL1F, 32x32, 4728
+MUL3F, 32x32, 8674
+spliter
+Time: Tue 14 May 2019 01:55:18 PM +0430
+gcc
+-D _GNU_SOURCE -O3 -march=native
+-fno-tree-vectorize -fno-tree-slp-vectorize
+MUL1, 32x32, 37852
+MUL1, 32x32, 6706
+MUL3, 32x32, 11682
+floating points:
+MUL1F, 32x32, 51692
+MUL1F, 32x32, 5014
+MUL3F, 32x32, 7354
+spliter
+Time: Tue 14 May 2019 01:56:06 PM +0430
+clang
+-D _GNU_SOURCE -O3 -march=native
+-fno-vectorize -fno-slp-vectorize
+MUL1, 32x32, 25258
+MUL1, 32x32, 35070
+MUL3, 32x32, 11594
+floating points:
+MUL1F, 32x32, 43172
+MUL1F, 32x32, 32474
+MUL3F, 32x32, 8064
+spliter
+Time: Tue 14 May 2019 02:04:09 PM +0430
+icc
+-D _GNU_SOURCE -O3 -xHOST
+-no-vec
+MUL1, 64x64, 203978
+MUL1, 64x64, 42290
+MUL3, 64x64, 48570
+floating points:
+MUL1F, 64x64, 229328
+MUL1F, 64x64, 28302
+MUL3F, 64x64, 42388
+spliter
+Time: Tue 14 May 2019 02:04:56 PM +0430
+gcc
+-D _GNU_SOURCE -O3 -march=native
+-fno-tree-vectorize -fno-tree-slp-vectorize
+MUL1, 64x64, 285424
+MUL1, 64x64, 42802
+MUL3, 64x64, 61906
+floating points:
+MUL1F, 64x64, 483094
+MUL1F, 64x64, 28582
+MUL3F, 64x64, 40988
+spliter
+Time: Tue 14 May 2019 02:05:44 PM +0430
+clang
+-D _GNU_SOURCE -O3 -march=native
+-fno-vectorize -fno-slp-vectorize
+MUL1, 64x64, 215144
+MUL1, 64x64, 41656
+MUL3, 64x64, 63528
+floating points:
+MUL1F, 64x64, 472584
+MUL1F, 64x64, 32630
+MUL3F, 64x64, 48278
+spliter
+Time: Mon 13 May 2019 10:55:28 PM +0430
+icc
+-D _GNU_SOURCE -O3 -xHOST
+-no-vec
+MUL1, 128x128, 1628378
+MUL1, 128x128, 421062
+MUL3, 128x128, 343230
+floating points:
+MUL1F, 128x128, 1622284
+MUL1F, 128x128, 331180
+MUL3F, 128x128, 320594
+spliter
+Time: Mon 13 May 2019 10:55:53 PM +0430
+gcc
+-D _GNU_SOURCE -O3 -march=native
+-fno-tree-vectorize -fno-tree-slp-vectorize
+MUL1, 128x128, 2611666
+MUL1, 128x128, 367600
+MUL3, 128x128, 378678
+floating points:
+MUL1F, 128x128, 5063618
+MUL1F, 128x128, 295778
+MUL3F, 128x128, 265304
+spliter
+Time: Mon 13 May 2019 10:56:18 PM +0430
+clang
+-D _GNU_SOURCE -O3 -march=native
+-fno-vectorize -fno-slp-vectorize
+MUL1, 128x128, 1769960
+MUL1, 128x128, 393660
+MUL3, 128x128, 383498
+floating points:
+MUL1F, 128x128, 4806818
+MUL1F, 128x128, 301194
+MUL3F, 128x128, 351284
+spliter
+Time: Mon 13 May 2019 11:06:57 PM +0430
+icc
+-D _GNU_SOURCE -O3 -xHOST
+-no-vec
+MUL1, 256x256, 13456150
+MUL1, 256x256, 3771644
+MUL3, 256x256, 4624440
+floating points:
+MUL1F, 256x256, 13316102
+MUL1F, 256x256, 2986166
+MUL3F, 256x256, 4623900
+spliter
+Time: Mon 13 May 2019 11:07:44 PM +0430
+gcc
+-D _GNU_SOURCE -O3 -march=native
+-fno-tree-vectorize -fno-tree-slp-vectorize
+MUL1, 256x256, 19943612
+MUL1, 256x256, 4077750
+MUL3, 256x256, 4138550
+floating points:
+MUL1F, 256x256, 45235720
+MUL1F, 256x256, 4386884
+MUL3F, 256x256, 4194706
+spliter
+Time: Mon 13 May 2019 11:08:32 PM +0430
+clang
+-D _GNU_SOURCE -O3 -march=native
+-fno-vectorize -fno-slp-vectorize
+MUL1, 256x256, 14126446
+MUL1, 256x256, 3552478
+MUL3, 256x256, 3064892
+floating points:
+MUL1F, 256x256, 44363128
+MUL1F, 256x256, 2970244
+MUL3F, 256x256, 3624604
+spliter
+Time: Mon 13 May 2019 11:41:00 PM +0430
+icc
+-D _GNU_SOURCE -O3 -xHOST
+-no-vec
+MUL1, 512x512, 106318282
+MUL1, 512x512, 27267680
+MUL3, 512x512, 32634444
+floating points:
+MUL1F, 512x512, 106022370
+MUL1F, 512x512, 24743892
+MUL3F, 512x512, 39497638
+spliter
+Time: Mon 13 May 2019 11:44:52 PM +0430
+gcc
+-D _GNU_SOURCE -O3 -march=native
+-fno-tree-vectorize -fno-tree-slp-vectorize
+MUL1, 512x512, 153841652
+MUL1, 512x512, 33479898
+MUL3, 512x512, 33572358
+floating points:
+MUL1F, 512x512, 381553148
+MUL1F, 512x512, 39013068
+MUL3F, 512x512, 37252366
+spliter
+Time: Mon 13 May 2019 11:48:46 PM +0430
+clang
+-D _GNU_SOURCE -O3 -march=native
+-fno-vectorize -fno-slp-vectorize
+MUL1, 512x512, 125527212
+MUL1, 512x512, 28426664
+MUL3, 512x512, 28340658
+floating points:
+MUL1F, 512x512, 381838468
+MUL1F, 512x512, 28261368
+MUL3F, 512x512, 35708660
+spliter
+Time: Tue 14 May 2019 12:47:45 AM +0430
+icc
+-D _GNU_SOURCE -O3 -xHOST
+-no-vec
+MUL1, 1024x1024, 859142674
+MUL1, 1024x1024, 241145596
+MUL3, 1024x1024, 291831666
+floating points:
+MUL1F, 1024x1024, 850208200
+MUL1F, 1024x1024, 229069580
+MUL3F, 1024x1024, 371255574
+spliter
+Time: Tue 14 May 2019 12:51:39 AM +0430
+gcc
+-D _GNU_SOURCE -O3 -march=native
+-fno-tree-vectorize -fno-tree-slp-vectorize
+MUL1, 1024x1024, 1223482776
+MUL1, 1024x1024, 270189788
+MUL3, 1024x1024, 306400030
+floating points:
+MUL1F, 1024x1024, 3145967110
+MUL1F, 1024x1024, 359059078
+MUL3F, 1024x1024, 340909062
+spliter
+Time: Tue 14 May 2019 12:55:33 AM +0430
+clang
+-D _GNU_SOURCE -O3 -march=native
+-fno-vectorize -fno-slp-vectorize
+MUL1, 1024x1024, 984336328
+MUL1, 1024x1024, 236968864
+MUL3, 1024x1024, 269296246
+floating points:
+MUL1F, 1024x1024, 3145021340
+MUL1F, 1024x1024, 244520838
+MUL3F, 1024x1024, 344967872
+spliter
+Time: Tue 14 May 2019 03:29:21 AM +0430
+icc
+-D _GNU_SOURCE -O3 -xHOST
+-no-vec
+MUL1, 2048x2048, 7933429680
+MUL1, 2048x2048, 5085752580
+MUL3, 2048x2048, 5265102346
+floating points:
+MUL1F, 2048x2048, 7784360166
+MUL1F, 2048x2048, 5091215666
+MUL3F, 2048x2048, 5599425396
+spliter
+Time: Tue 14 May 2019 03:52:41 AM +0430
+gcc
+-D _GNU_SOURCE -O3 -march=native
+-fno-tree-vectorize -fno-tree-slp-vectorize
+MUL1, 2048x2048, 10228399948
+MUL1, 2048x2048, 5287061232
+MUL3, 2048x2048, 5223766788
+floating points:
+MUL1F, 2048x2048, 25975229084
+MUL1F, 2048x2048, 5718858272
+MUL3F, 2048x2048, 5613661650
+spliter
+Time: Tue 14 May 2019 04:16:07 AM +0430
+clang
+-D _GNU_SOURCE -O3 -march=native
+-fno-vectorize -fno-slp-vectorize
+MUL1, 2048x2048, 8547818392
+MUL1, 2048x2048, 5352455196
+MUL3, 2048x2048, 5198191570
+floating points:
+MUL1F, 2048x2048, 25953283154
+MUL1F, 2048x2048, 5480263596
+MUL3F, 2048x2048, 5393879588

@@ -1,0 +1,15 @@
+ICC VEC: source //opt/intel/compilers_and_libraries_2018/linux/bin/compilervars.sh -arch intel64 && icc  -D _GNU_SOURCE -O3 -march=native -c -S -o "%e"vec1icc "%f" && geany "%e"vec1icc && geany "%e".c
+
+GCC VEC: gcc  -D _GNU_SOURCE -O3 -masm=intel  -march=native -c -S -o "%e"vec2gcc "%f" && geany "%e"vec2gcc && geany "%e".c
+
+LLV?M VEC: clang  -D _GNU_SOURCE -O3 -march=native -c -S -o "%e"vec3clang "%f" && geany "%e"vec3clang && geany "%e".c
+
+
+ICC NOVEC: source //opt/intel/compilers_and_libraries_2018/linux/bin/compilervars.sh -arch intel64 && icc  -D _GNU_SOURCE -O3 -no-vec -march=native -c -S -o "%e"novec1icc "%f" && geany "%e"novec1icc && geany "%e".c
+
+GCC NOVEC: gcc  -D _GNU_SOURCE -O3 -fno-tree-vectorize -fno-tree-slp-vectorize -march=native -c -S -o "%e"novec2gcc "%f" && geany "%e"novec2gcc && geany "%e".c
+
+LLVM NOVEC: clang  -D _GNU_SOURCE -O3 -fno-vectorize -fno-slp-vectorize -march=native -c -S -o "%e"novec3clang "%f" && geany "%e"novec3clang && geany "%e".c
+
+IACA : gcc -O3 -march=native -D _GNU_SOURCE  -o "%e" "%f" && iaca -reduceout ./"%e"
+
