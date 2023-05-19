@@ -1,4 +1,4 @@
-#Paper-JPDC-Elsevier
+# Paper-JPDC-Elsevier
 
 Hossein Amiri, Asadollah Shahbahrami,
 SIMD programming using Intel vector extensions,
